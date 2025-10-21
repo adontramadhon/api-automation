@@ -1,0 +1,157 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-10-21T07:18:23.127Z",
+    "end": "2025-10-21T07:18:23.211Z",
+    "duration": 84,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "2abbbf3c-34ab-4408-9768-cb2f3d04f634",
+      "title": "",
+      "fullFile": "D:\\API\\tests\\reqres.test.js",
+      "file": "\\tests\\reqres.test.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ff825018-51c2-4e7e-8742-e1950b0d31d8",
+          "title": "API Automation Reqres.in",
+          "fullFile": "D:\\API\\tests\\reqres.test.js",
+          "file": "\\tests\\reqres.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "GET List Users",
+              "fullTitle": "API Automation Reqres.in GET List Users",
+              "timedOut": false,
+              "duration": 24,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const response = await api.get('/users?page=2');\nassert.strictEqual(response.status, 200);",
+              "err": {},
+              "uuid": "207f3fbb-bcd9-4894-b3e9-541f1ba0ba90",
+              "parentUUID": "ff825018-51c2-4e7e-8742-e1950b0d31d8",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "POST Create User",
+              "fullTitle": "API Automation Reqres.in POST Create User",
+              "timedOut": false,
+              "duration": 27,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const response = await api.post('/users', { name: \"morpheus\", job: \"leader\" });\nassert.strictEqual(response.status, 201);",
+              "err": {},
+              "uuid": "3e05bdf7-e8e0-4bc4-ab99-6d993b1f5b41",
+              "parentUUID": "ff825018-51c2-4e7e-8742-e1950b0d31d8",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "PATCH Update User",
+              "fullTitle": "API Automation Reqres.in PATCH Update User",
+              "timedOut": false,
+              "duration": 15,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const response = await api.patch('/users/2', { name: \"neo\", job: \"the one\" });\nassert.strictEqual(response.status, 200);",
+              "err": {},
+              "uuid": "c20a6ab1-288c-4fe9-96d3-4474ca0aa411",
+              "parentUUID": "ff825018-51c2-4e7e-8742-e1950b0d31d8",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "DELETE User",
+              "fullTitle": "API Automation Reqres.in DELETE User",
+              "timedOut": false,
+              "duration": 16,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const response = await api.delete('/users/2');\nassert.strictEqual(response.status, 204);",
+              "err": {},
+              "uuid": "d06898cc-a65a-4f6e-93ff-fd5f75a69936",
+              "parentUUID": "ff825018-51c2-4e7e-8742-e1950b0d31d8",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "207f3fbb-bcd9-4894-b3e9-541f1ba0ba90",
+            "3e05bdf7-e8e0-4bc4-ab99-6d993b1f5b41",
+            "c20a6ab1-288c-4fe9-96d3-4474ca0aa411",
+            "d06898cc-a65a-4f6e-93ff-fd5f75a69936"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 82,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "11.7.4"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.3.0"
+    }
+  }
+}
